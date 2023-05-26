@@ -62,7 +62,6 @@ const AddBlog = () => {
     },
     validationSchema: userSchema,
     onSubmit: (values) => {
-      alert(JSON.stringify(values));
       dispatch(createBlog(values));
       formik.resetForm();
       setimages(null);

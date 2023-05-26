@@ -64,7 +64,6 @@ const AddblogCategory = () => {
       } else {
         dispatch(createBlogCat(values));
       }
-      alert(JSON.stringify(values));
       formik.resetForm();
       setTimeout(() => {
         dispatch(resetState());

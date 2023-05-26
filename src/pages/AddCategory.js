@@ -68,7 +68,6 @@ const AddCategory = () => {
       } else {
         dispatch(createcategory(values));
       }
-      alert(JSON.stringify(values));
       formik.resetForm();
       setTimeout(() => {
         dispatch(resetState());

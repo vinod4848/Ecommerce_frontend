@@ -64,7 +64,6 @@ const AddCoupon = () => {
       } else {
         dispatch(createCoupon(values));
       }
-      alert(JSON.stringify(values));
       formik.resetForm();
       setTimeout(() => {
         dispatch(resetState());

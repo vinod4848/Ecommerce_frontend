@@ -93,7 +93,6 @@ const Addproduct = () => {
     },
     validationSchema: userSchema,
     onSubmit: (values) => {
-      alert(JSON.stringify(values));
       dispatch(createProduct(values));
       formik.resetForm();
       setColor(null);

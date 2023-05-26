@@ -63,7 +63,6 @@ const AddBrand = () => {
       } else {
         dispatch(createbrand(values));
       }
-      alert(JSON.stringify(values));
       formik.resetForm();
       setTimeout(() => {
         dispatch(resetState());

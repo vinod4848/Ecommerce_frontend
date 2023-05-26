@@ -63,7 +63,6 @@ const AddColor = () => {
       } else {
         dispatch(createColor(values));
       }
-      alert(JSON.stringify(values));
       formik.resetForm();
       setTimeout(() => {
         dispatch(resetState());
