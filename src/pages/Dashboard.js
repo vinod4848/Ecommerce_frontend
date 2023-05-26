@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React from "react";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
@@ -119,10 +120,8 @@ const Dashboard = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getOrders());
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   const orderState = useSelector((state) => state.auth.orders);
-  console.log(orderState,"orderState");
   const data2 = [];
   for (let i = 0; i < orderState.length; i++) {
     data2.push({

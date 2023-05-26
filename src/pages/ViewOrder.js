@@ -53,7 +53,6 @@ const ViewOrder = () => {
     dispatch(getOrderByUser(userId));
   }, []);
   const orderState = useSelector((state) => state.auth.orderbyuser);
-  console.log(orderState);
   const data1 = [];
   if (orderState && Object.keys(orderState).length !== 0) {
     const { products, paymentintent } = orderState;

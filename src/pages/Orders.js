@@ -49,7 +49,6 @@ const Orders = () => {
     dispatch(getOrders());
   }, []);
   const orderState = useSelector((state) => state.auth.orders);
-  console.log(orderState, "orderState");
   const data1 = [];
   for (let i = 0; i < orderState.length; i++) {
     data1.push({
